@@ -1,0 +1,28 @@
+:host {
+    padding: 30px
+  }
+  
+  .dash-sec{
+      display: flex;
+ }
+
+ .ban-info{
+    margin-left: 3em;
+    padding-right: 11em;
+    margin-top: 6em;
+ }
+
+ .ban-image{
+    max-width: 10em;
+ }
+
+ .col-sm-8{
+   padding-top: 3em;
+
+ }
+
+ .col-sm-4 img{
+   padding-left: 37em;
+   width: 40em;
+   max-height: 28em;
+ }

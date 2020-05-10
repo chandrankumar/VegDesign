@@ -1,0 +1,52 @@
+<section class="banner-bottom py-5">
+    <div class="container">
+        
+        <div class="content-grid">
+            <div class="text-center icon">
+                <span class="fa fa-unlock-alt"></span>
+            </div>
+            <span class ="error" *ngIf="isError">
+                <p>{{errorMsg}}</p>
+            </span>
+            <div class="content-bottom">
+                <form  #myform="ngForm" (ngSubmit)="login(myform)" method="post">
+                   
+                        <div class="content-input-field">
+                            <input name="username"  ngModel type="text" value="" placeholder="User Name" required>
+                        </div>
+                    
+                 
+                        <div class="content-input-field" >
+                            <input name="password"  ngModel  type="Password" placeholder="Password" required>
+                        </div>
+                    
+                    <div class="content-input-field">
+                        <button  class="btn">Sign In</button>
+                    </div>
+                    <ul class="list-login">
+                        <li class="switch-slide">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                                keep Logged in
+                            </label>
+                        </li>
+                        <li>
+                            <a href="#" class="text-right">Forgot password?</a>
+                        </li>
+                        <li class="clearfix"></li>
+                    </ul>
+                    <ul class="list-login-bottom">
+                        <li class="">
+                            <a (click)="navigateToRegister()" class="">Don't have an Account?</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-right">Need Help?</a>
+                        </li>
+                        <li class="clearfix"></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
