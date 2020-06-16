@@ -13,7 +13,12 @@
   app-footer {
     display: flex;
     flex-direction: column;
-    height: 210px;
+    height: 244px;
   }
 
-  
+  html, body {
+    background: #49b59763;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}

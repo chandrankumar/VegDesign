@@ -21,8 +21,27 @@
 
  }
 
- .col-sm-4 img{
-   padding-left: 37em;
-   width: 40em;
-   max-height: 28em;
+ .col-sm-4 img{   
+  padding-left: 35em;
+  width: 40em;
+  max-height: 28em;
+  margin-top: -90px;
  }
+
+ mat-grid-tile {
+  background: #f9f9f9;
+  
+}
+
+.mat-grid-tile .mat-grid-tile-header, .mat-grid-tile .mat-grid-tile-footer {
+  display: flex;
+  align-items: center;
+  height: 16px;
+  color: #0e0e0e;
+  background: rgba(0,0,0,.38);
+  overflow: hidden;
+  padding: 0 16px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}

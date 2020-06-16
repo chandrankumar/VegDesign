@@ -8,6 +8,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutModule } from './layout/layout.module';
 
 import { HttpClientModule } from '@angular/common/http';
+import { MaterialModule } from './angular.material.module';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule.forRoot([]),
     FlexLayoutModule,
     LayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
